@@ -1,17 +1,17 @@
 package chan.murmur
 
 enum class Murmur {
-  ONE {
+  V1 {
     override fun hash(data: ByteArray, length: Int, seed: Long): Long {
       return One.hash(data, length, seed)
     }
   },
-  TWO {
+  V2 {
     override fun hash(data: ByteArray, length: Int, seed: Long): Long {
       return Two.hash(data, length, seed)
     }
   },
-  THREE {
+  V3 {
     override fun hash(data: ByteArray, length: Int, seed: Long): Long {
       return Three.hash86b32(data, length, seed)
     }
